@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 750px;
     height: 100vh;
 }
 
@@ -39,10 +39,10 @@ body {
 .instagram-continue {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+    width: 350px;
+    height: 570px;
 }
 
 .group {
@@ -50,18 +50,19 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     width: 100%;
-    padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    padding: 1.8rem 0;
+    border: 1px solid rgba(219, 219, 219, 0.9);
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
+    margin-bottom: 10px;
 }
 
 .instagram-logo {
-    height: 3rem;
+    height: 5rem;
 }
 
 .profile-photo {
@@ -69,8 +70,10 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid lightgrey;
+    border: 1px solid #DBDBDB;
     overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 .profile-photo img {
@@ -128,32 +131,10 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-@media (max-width: 1450px) {
-    .instagram-wrapper {
-        width: 70%;
-    }
-}
 
-@media (max-width: 1050px) {
-    .instagram-wrapper {
-        width: 90%;
-    }
-}
 
 @media (max-width: 790px) {
-    body {
-        background-color: #ffffff;
-    }
-    .instagram-wrapper {
-        width: 90%;
-    }
     .instagram-phone {
         display: none;
-    }
-    .instagram-continue {
-        width: 100%;
-    }
-    .group {
-        border: 1px solid transparent;
     }
 }
